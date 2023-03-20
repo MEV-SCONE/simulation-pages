@@ -1,14 +1,21 @@
 <script>
-import { getBlockNum, getBlocks } from "../assets/js/data.js";
+import { getBlocks } from "../assets/js/data.js";
 const MAX_BLOCK = 100;
 const MIN_BLOCK = 0;
 
 export default {
   data() {
     return {
-      blockIndex: getBlockNum(),
       blocks: getBlocks(),
     };
+  },
+  computed: {
+    blockIndex: {
+      get() {
+        if ( this.blocks === null ) return 0;
+        return this.blocks.length;
+      }
+    }
   },
   methods: {
     getRandomArbitrary(min, max) {
@@ -17,15 +24,14 @@ export default {
     addBlock() {
       if (this.blockIndex >= MAX_BLOCK) return;
       this.blocks.push({
-        id: this.blockIndex++,
+        id: this.blockIndex,
         validity: 1,
-        fee: this.getRandomArbitrary(0, 10).toFixed(2),
-        time: this.getRandomArbitrary(0.01, 0.4).toFixed(2),
+        fee: Math.round( this.getRandomArbitrary(0, 10) * 1e2 ) / 1e2,
+        time:  Math.round( this.getRandomArbitrary(0.01, 0.4) * 1e2 ) / 1e2,
       });
     },
     popBlock() {
       if (this.blockIndex <= MIN_BLOCK) return;
-      this.blockIndex--;
       this.blocks.pop();
     },
   },
@@ -110,6 +116,7 @@ export default {
                     id="form-horizontal-text"
                     type="number"
                     v-model="block.fee"
+                    min=0
                   />
                 </div>
               </div>
@@ -123,6 +130,7 @@ export default {
                     id="form-horizontal-text"
                     type="number"
                     v-model="block.time"
+                    min=0
                   />
                 </div>
               </div>

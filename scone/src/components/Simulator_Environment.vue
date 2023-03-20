@@ -37,6 +37,7 @@ export default {
                 id="form-stacked-text"
                 type="number"
                 v-model="environment.blockInterval"
+                min=0
               />
             </div>
           </div>
@@ -109,9 +110,9 @@ export default {
           </div>
         </form>
       </div>
-      <div class="uk-card-footer">
+      <!--div class="uk-card-footer">
         <a href="#" class="uk-button uk-button-text">Read more</a>
-      </div>
+      </div-->
     </div>
   </div>
 </template>
