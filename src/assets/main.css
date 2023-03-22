@@ -19,10 +19,47 @@ body {
   margin-top: 20px;
 }
 
-h3 {
+h1, h2, h3, h4, h5, h6, .title, .uk-accordion-title {
   color: var(--color-heading);
+  font-weight: 500;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.title {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 20px 0 20px 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .uk-card {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.fig {
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+:not(pre)>code {
+  padding: 0;
+  background: transparent;
+}
+
+.tiny-padding-right {
+  padding-right: 5px;
+}
+
+.small-text-padding {
+  font-size: .8rem;
+  padding-bottom: 10px;
+}
+
+a, a:hover {
+  font-weight: 500;
+  color: var(--color-link);
 }

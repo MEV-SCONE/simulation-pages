@@ -26,7 +26,11 @@ export default {
         <form class="uk-form-stacked uk-text-left">
           <div class="uk-margin">
             <label class="uk-form-label" for="form-stacked-text"
-              >Block Interval :
+              ><span
+                class="tiny-padding-right"
+                uk-tooltip="refers to the time it takes to create a new block in the blockchain."
+                >Block Interval :</span
+              >
               <span class="uk-text-primary"
                 >{{ environment.blockInterval }} ms</span
               ></label
@@ -37,14 +41,18 @@ export default {
                 id="form-stacked-text"
                 type="number"
                 v-model="environment.blockInterval"
-                min=0
+                min="0"
               />
             </div>
           </div>
 
           <div class="uk-margin">
             <label class="uk-form-label" for="form-stacked-text"
-              >Optimal stopping percentage :
+              ><span
+                class="tiny-padding-right"
+                uk-tooltip="determines the proportion of candidates that will be unconditionally rejected."
+                >Where We Stop :</span
+              >
               <span class="uk-text-primary"
                 >{{ environment.optimalStoppingPercentage }} %</span
               ></label
@@ -60,9 +68,13 @@ export default {
             />
           </div>
 
-          <div class="uk-margin">
+          <div class="uk-margin-top">
             <label class="uk-form-label" for="form-stacked-text"
-              >Selection criteria :
+              ><span
+                class="tiny-padding-right"
+                uk-tooltip="represents the number of top candidates to select. The criterion is the amount of bid."
+                >Wanna Pick</span
+              >
               <span class="uk-text-primary">Top-{{ environment.top_K }}</span></label
             >
             <div class="uk-form-controls">
@@ -110,11 +122,14 @@ export default {
           </div>
         </form>
       </div>
-      <!--div class="uk-card-footer">
-        <a href="#" class="uk-button uk-button-text">Read more</a>
-      </div-->
+      <div class="uk-card-footer">
+        <a
+          href="https://github.com/MEV-SCONE/simulator-py/blob/main/simul-SCONE.ipynb"
+          class="uk-button uk-button-text"
+          >Read more</a
+        >
+      </div>
     </div>
   </div>
 </template>
-<style scoped>
-</style>
+<style scoped></style>

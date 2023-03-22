@@ -12,10 +12,10 @@ export default {
   computed: {
     blockIndex: {
       get() {
-        if ( this.blocks === null ) return 0;
+        if (this.blocks === null) return 0;
         return this.blocks.length;
-      }
-    }
+      },
+    },
   },
   methods: {
     getRandomArbitrary(min, max) {
@@ -26,8 +26,8 @@ export default {
       this.blocks.push({
         id: this.blockIndex,
         validity: 1,
-        fee: Math.round( this.getRandomArbitrary(0, 10) * 1e2 ) / 1e2,
-        time:  Math.round( this.getRandomArbitrary(0.01, 0.4) * 1e2 ) / 1e2,
+        fee: Math.round(this.getRandomArbitrary(0, 10) * 1e2) / 1e2,
+        time: Math.round(this.getRandomArbitrary(0.01, 0.4) * 1e2) / 1e2,
       });
     },
     popBlock() {
@@ -51,7 +51,11 @@ export default {
         <form class="uk-form-stacked uk-text-left">
           <div class="uk-margin">
             <label class="uk-form-label" for="form-stacked-text"
-              >Number of block proposals</label
+              ><span
+                class="tiny-padding-right"
+                uk-tooltip="indicates the total number of block proposals (candidates) in this block interval that will be simulated by relays/validators."
+                >Number of Block Proposals</span
+              ></label
             >
             <div class="uk-form-controls">
               <input
@@ -82,7 +86,13 @@ export default {
           <div class="uk-accordion-content">
             <form class="uk-form-horizontal uk-text-left">
               <div class="uk-margin">
-                <div class="uk-form-label">Validity</div>
+                <div class="uk-form-label">
+                  <span
+                    class="tiny-padding-right"
+                    uk-tooltip="represents the validity status of a block proposal."
+                    >Validity</span
+                  >
+                </div>
                 <div class="uk-form-controls uk-form-controls-text">
                   <label
                     ><input
@@ -108,7 +118,9 @@ export default {
               </div>
               <div class="uk-margin">
                 <label class="uk-form-label" for="form-horizontal-text"
-                  >Fee amount(ETH)</label
+                  ><span class="tiny-padding-right" uk-tooltip="specifies the bid amount for a block proposal."
+                    >Bid (ETH)</span
+                  ></label
                 >
                 <div class="uk-form-controls">
                   <input
@@ -116,13 +128,14 @@ export default {
                     id="form-horizontal-text"
                     type="number"
                     v-model="block.fee"
-                    min=0
+                    min="0"
                   />
                 </div>
               </div>
               <div class="uk-margin">
                 <label class="uk-form-label" for="form-horizontal-text"
-                  >Simulation time required(ms)</label
+                  ><span class="tiny-padding-right" uk-tooltip="indicates the time required to simulate the block proposal."
+                    >Simulation Time Required (ms)</span></label
                 >
                 <div class="uk-form-controls">
                   <input
@@ -130,7 +143,7 @@ export default {
                     id="form-horizontal-text"
                     type="number"
                     v-model="block.time"
-                    min=0
+                    min="0"
                   />
                 </div>
               </div>
