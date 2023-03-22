@@ -1,29 +1,46 @@
-# scone
+# SCONE Simulator
 
-This template should help get you started developing with Vue 3 in Vite.
+TBD
 
-## Recommended IDE Setup
+# How to Run
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+```sh
+$ npm run <build|preview|deploy>
+```
 
-## Customize configuration
+<details>
+<summary>Details</summary>
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+<!-- Need One blank line -->
 
 ## Project Setup
 
 ```sh
-npm install
+$ npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Project Build
 
 ```sh
-npm run dev
+$ npm run build
 ```
 
-### Compile and Minify for Production
+## Compile and Hot-Reload for Development
 
 ```sh
-npm run build
+$ npm run dev
 ```
+
+## Compile and Minify for Production
+
+```sh
+$ npm run preview
+```
+
+## Deploy Github Pages
+
+```sh
+$ npm run deploy
+```
+
+</details>
