@@ -15,9 +15,9 @@
       candidate is to reject about 37% (1/e ~= 0.3679) of candidates unconditionally. In
       this strategy, the probability of selecting the best candidate is about 40%.
       <br />
-      If you are willing to pick a candidate in the top-$k$, the success rate
+      If you are willing to pick a candidate in the top-k, the success rate
       significantly increases, and the percentage of candidates rejected also decreases as
-      $k$ increases. For example, if selecting one who is in the top-10 rather than top-1,
+      k increases. For example, if selecting one who is in the top-10 rather than top-1,
       rejecting about 6% of all candidates is the best strategy and the success
       probability is over 90%. Very efficient and robust.<br/>
       <br />

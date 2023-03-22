@@ -1,7 +1,7 @@
 <template>
   <div class="uk-text-left">
     <p>
-      For your specific example, let's discuss the probability of selecting a top-$k$
+      For your specific example, let's discuss the probability of selecting a top-k
       proposal, considering the distribution of proposals as depicted in the plot
       below:<br />
     </p>
@@ -32,17 +32,17 @@
     After <code><b>RUN</b></code
     >-ing the simulation 10,000 times, the results demonstrate that implementing optimal
     stopping at an appropriate percentage (such as ~=37%) is the best strategy for
-    increasing the probability of selecting the top-$k$ proposals, with high efficiency.
+    increasing the probability of selecting the top-k proposals, with high efficiency.
     <div class="uk-child-width-expand@m uk-text-center" uk-grid>
       <div>
         <div class="fig">
-          <img src="../img/fig2.png" />
-          <figcaption>Fig 1. With a 2000ms block interval (tight)</figcaption>
+          <img src="../img/fig3.png" />
+          <figcaption>Fig 1. with a 2000ms block interval (tight)</figcaption>
         </div>
       </div>
       <div>
         <div class="fig">
-          <img src="../img/fig2.png" />
+          <img src="../img/fig4.png" />
           <figcaption>Fig 2. with a 12000ms block interval (loose)</figcaption>
         </div>
       </div>
