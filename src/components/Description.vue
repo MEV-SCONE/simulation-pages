@@ -8,11 +8,8 @@
       <br />
       In the context of MEV, Optimal Stopping can help relayers reduce the computational
       load required to check the validity of all block proposals and focus on the most
-      valuable ones efficiently, improving scalability and security. <br /><i
-        ><b>Where</b></i
-      >
-      We Stop ~ The Magic of
-      <i><b>1/e</b></i>
+      valuable ones efficiently, improving scalability and security.
+      <h4>Where We Stop ~ The Magic of <i>1/e</i></h4>
       <div class="fig"><img src="../img/fig1.png" /></div>
       The simulation results demonstrate that the optimal strategy for picking the top-1
       candidate is to reject about 37% (1/e ~= 0.3679) of candidates unconditionally. In
@@ -33,4 +30,7 @@
 </template>
 
 <style scoped>
+h4 {
+  margin-top: 20px;
+}
 </style>
