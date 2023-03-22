@@ -117,7 +117,4 @@ export default {
   </div>
 </template>
 <style scoped>
-.uk-card {
-  box-shadow: 0 0 100px rgb(216, 216, 216, 0.5);
-}
 </style>

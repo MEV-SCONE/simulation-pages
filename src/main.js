@@ -4,7 +4,7 @@ import router from './router'
 
 // // CSS
 // import './assets/uikit.css'
-// import './assets/main.css'
+import './assets/main.css'
 
 // // Frontend Scripts
 // import "./assets/js/uikit.js"

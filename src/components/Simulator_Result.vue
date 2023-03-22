@@ -95,7 +95,7 @@ export default {
       </div>
     </div>
 
-    <div v-if="done" class="uk-card uk-card-default">
+    <div v-if="done" class="uk-card uk-card-default margin-top">
       <div class="uk-card-header">
         <div class="uk-grid-small uk-flex-middle" uk-grid>
           <div class="uk-width-expand">
@@ -196,10 +196,6 @@ export default {
 <style scoped>
 .icon {
   padding: 0 0 0 5px;
-}
-
-.uk-card {
-  box-shadow: 0 0 100px rgb(216, 216, 216, 0.5);
 }
 
 .card-danger {

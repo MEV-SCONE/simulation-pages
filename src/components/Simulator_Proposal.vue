@@ -72,7 +72,7 @@ export default {
     <div
       v-for="block in blocks.slice().reverse()"
       :key="block.id"
-      class="uk-card uk-card-default uk-card-body"
+      class="uk-card uk-card-default uk-card-body margin-top"
     >
       <ul uk-accordion="multiple: true">
         <li class="uk-open">
@@ -144,9 +144,5 @@ export default {
 <style scoped>
 .icon {
   padding: 0 0 0 5px;
-}
-
-.uk-card {
-  box-shadow: 0 0 100px rgb(216, 216, 216, 0.5);
 }
 </style>

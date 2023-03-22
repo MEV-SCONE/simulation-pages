@@ -1,0 +1,28 @@
+@import './base.css';
+
+body {
+  background-attachment: fixed;
+}
+
+.uk-card-title {
+  /*font-family: 'Rubik', sans-serif;*/
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.block-title {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+h3 {
+  color: var(--color-heading);
+}
+
+.uk-card {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
