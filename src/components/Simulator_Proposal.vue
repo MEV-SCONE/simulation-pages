@@ -135,7 +135,7 @@ export default {
               <div class="uk-margin">
                 <label class="uk-form-label" for="form-horizontal-text"
                   ><span class="tiny-padding-right" uk-tooltip="indicates the time required to simulate the block proposal."
-                    >Simulation Time Required (ms)</span></label
+                    >Simulation Time Required (sec)</span></label
                 >
                 <div class="uk-form-controls">
                   <input
