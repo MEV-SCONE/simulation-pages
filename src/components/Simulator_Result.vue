@@ -190,7 +190,7 @@ export default {
                 ><span
                   class="tiny-padding-right"
                   uk-tooltip="indicates the time required to simulate the block proposal."
-                  >Simulation Time Required (ms)</span
+                  >Simulation Time Required (sec)</span
                 ></label
               >
               <div class="uk-form-controls">

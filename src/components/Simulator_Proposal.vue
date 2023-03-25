@@ -26,7 +26,7 @@ export default {
       this.blocks.push({
         id: this.blockIndex,
         validity: 1,
-        fee: Math.round(this.getRandomArbitrary(0, 10) * 1e2) / 1e2,
+        fee: Math.round(this.getRandomArbitrary(0, 10) * 1e2) / 1e2,  // 30
         time: Math.round(this.getRandomArbitrary(0.01, 0.4) * 1e2) / 1e2,
       });
     },

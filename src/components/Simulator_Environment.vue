@@ -32,7 +32,7 @@ export default {
                 >Block Interval :</span
               >
               <span class="uk-text-primary"
-                >{{ environment.blockInterval }} ms</span
+                >{{ environment.blockInterval }} sec</span
               ></label
             >
             <div class="uk-form-controls">
